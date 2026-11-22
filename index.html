@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>الندي لتأجير خيام وتجهيز الحفلات في الرياض</title>
+<title>الندي لتأجير وتجهيز الحفلات بالرياض | تأجير خيام وبيوت شعر ومكيفات ودفايات</title>
 <meta name="description" content="الندي لتأجير وتجهيز الحفلات في الرياض: تأجير خيام، بيوت شعر، مكيفات سبليت وصحراوي وفريون، دفايات وعقود لمبات. توصيل وتركيب سريع. اتصل 0568928381">
 <meta name="keywords" content="تأجير خيام في الرياض, تأجير بيوت شعر, تأجير مكيفات سبليت, تأجير مكيفات صحراوي, تأجير مكيفات فريون, تأجير دفايات, تأجير عقود لمبات, تأجير مكيفات في الرياض, تجهيز حفلات الرياض, الندي لتأجير وتجهيز الحفلات">
 <meta name="robots" content="index,follow,max-image-preview:large">
@@ -41,7 +41,10 @@ section{padding:80px 0}
 .bgimg{background:linear-gradient(135deg,rgba(9,50,61,.46),rgba(124,77,255,.2) 60%,rgba(255,77,141,.16)),var(--bg) center/cover fixed;color:#fff}
 .bgimg .ttl h2,.bgimg .ttl p{color:#fff;text-shadow:0 2px 10px #0006}
 .bgimg .card-s{background:rgba(255,255,255,.93)}
-.hero{min-height:86vh;display:flex;align-items:center;padding:60px 0}
+.hero{min-height:calc(100vh - var(--hd,0px));min-height:calc(100svh - var(--hd,0px));width:100%;display:flex;align-items:center;justify-content:center;padding:60px 0}
+.hero>.container{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.hero-btns{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:14px;width:100%}
+.hero-btns .btn{flex:1 1 210px;max-width:260px;margin:0;display:inline-flex;align-items:center;justify-content:center;gap:8px}
 .hero h1{font-weight:800;text-shadow:0 3px 14px #0007}
 .hero .lead{text-shadow:0 2px 10px #0007;max-width:720px;margin-inline:auto}
 .tag{display:inline-block;background:linear-gradient(90deg,var(--f1),var(--f2));color:#fff;font-weight:700;padding:5px 18px;border-radius:50px;margin-bottom:16px;animation:pu 2.4s infinite;--pc:#ff4d8d88}
@@ -106,6 +109,15 @@ form.card-s:hover{transform:none}
 .rv.on{opacity:1;transform:none}
 .row>.rv:nth-child(3n+2){transition-delay:.12s}
 .row>.rv:nth-child(3n){transition-delay:.24s}
+@media(min-width:992px){
+.navbar-brand{font-size:clamp(16px,calc(1.5vw + 3px),21.6px);white-space:nowrap;margin-inline-end:12px}
+.navbar .navbar-nav{flex:1 1 auto;justify-content:space-evenly;margin-inline:0!important}
+.nav-link{--np:clamp(6px,calc(1.2vw - 4px),14px);font-size:clamp(12.5px,calc(.9vw + 4px),16px);padding:8px var(--np)!important;white-space:nowrap}
+.nav-link:after{right:var(--np)}
+.nav-link:hover:after{width:calc(100% - 2*var(--np))}
+.navbar .offcanvas-body{align-items:center}
+.navbar .offcanvas-body .btn-g{margin:0;margin-inline-start:12px;white-space:nowrap;padding:10px clamp(16px,calc(1vw + 6px),22px);font-size:clamp(13px,calc(.4vw + 9px),15px)}
+}
 @media(max-width:991px){section{padding:56px 0}.bgimg{background-attachment:scroll}.offcanvas{max-width:280px}.nav-link:after{display:none}.nav-link{border-bottom:1px solid #e3ecec}}
 @media(max-width:576px){.hero h1{font-size:1.9rem}.num{font-size:2.3rem}.fl{width:50px;height:50px;font-size:24px}.wa{bottom:80px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
@@ -113,10 +125,10 @@ form.card-s:hover{transform:none}
 </head>
 <body>
 <canvas id="fx" aria-hidden="true"></canvas>
-<div class="topbar d-none d-md-block"><div class="container d-flex justify-content-between"><span><i class="bi bi-geo-alt-fill"></i> الرياض - نخدم جميع الأحياء</span><span><a href="tel:0568928381"><i class="bi bi-telephone-fill"></i> 0568928381</a><a href="https://wa.me/966568928381" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> واتساب</a></span></div></div>
+<div class="topbar d-none d-md-block"><div class="container-fluid px-lg-4 px-xl-5 d-flex justify-content-between"><span><i class="bi bi-geo-alt-fill"></i> الرياض - نخدم جميع الأحياء</span><span><a href="tel:0568928381"><i class="bi bi-telephone-fill"></i> 0568928381</a><a href="https://wa.me/966568928381" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> واتساب</a></span></div></div>
 
-<nav class="navbar navbar-expand-lg sticky-top"><div class="lights" id="lt" aria-hidden="true"></div><div class="container">
-<a class="navbar-brand" href="#top"><i class="bi bi-stars text-warning"></i> الندي لتأجير خيام وتجهيز الحفلات في الرياض</a>
+<nav class="navbar navbar-expand-lg sticky-top"><div class="lights" id="lt" aria-hidden="true"></div><div class="container-fluid px-lg-4 px-xl-5">
+<a class="navbar-brand" href="#top"><i class="bi bi-stars text-warning"></i> الندي لتأجير خيام وتجهيز الحفلات</a>
 <button class="navbar-toggler border-0" data-bs-toggle="offcanvas" data-bs-target="#oc" aria-label="القائمة"><i class="bi bi-list fs-1"></i></button>
 <div class="offcanvas offcanvas-start" id="oc" tabindex="-1"><div class="offcanvas-header"><h2 class="offcanvas-title h5 fw-bold text-primary">الندي لتأجير وتجهيز الحفلات</h2><button class="btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق"></button></div>
 <div class="offcanvas-body"><ul class="navbar-nav mx-auto">
@@ -133,8 +145,8 @@ form.card-s:hover{transform:none}
 <span class="tag"><i class="bi bi-clock-history"></i> خدمة على مدار 24 ساعة في الرياض</span>
 <h1 class="display-4">تأجير خيام وبيوت شعر ومكيفات في الرياض</h1>
 <p class="lead my-4">الندي لتأجير وتجهيز الحفلات: خيام، بيوت شعر، مكيفات سبليت وصحراوي وفريون، دفايات وعقود لمبات بتوصيل وتركيب سريع.</p>
-<a class="btn btn-g btn-lg" href="tel:0568928381"><i class="bi bi-telephone-fill"></i> اتصل الآن</a>
-<a class="btn btn-o btn-lg" href="https://wa.me/966568928381" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> تواصل واتساب</a></div></header>
+<div class="hero-btns"><a class="btn btn-g btn-lg" href="tel:0568928381"><i class="bi bi-telephone-fill"></i> اتصل الآن</a>
+<a class="btn btn-o btn-lg" href="https://wa.me/966568928381" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> تواصل واتساب</a></div></div></header>
 
 <main>
 <section id="about"></section>
@@ -257,6 +269,7 @@ f.onsubmit=e=>{e.preventDefault();const d=new FormData(f);open(`${W}?text=`+enco
 bk.elements.d.min=new Date().toISOString().slice(0,10);
 bk.onsubmit=e=>{e.preventDefault();const d=new FormData(bk);open(`${W}?text=`+encodeURIComponent(`طلب عرض سعر\nالاسم: ${d.get('n')}\nالجوال: ${d.get('p')}\nالمناسبة: ${d.get('e')}\nالتاريخ: ${d.get('d')}\nالحي: ${d.get('a')||'-'}\nعدد الضيوف: ${d.get('g')||'-'}\nالخدمات: ${d.getAll('s').join('، ')||'-'}`),'_blank');bk.reset()};
 document.getElementById('y').textContent=new Date().getFullYear();
+const hd=()=>{const t=document.querySelector('.topbar'),n=document.querySelector('.navbar');document.documentElement.style.setProperty('--hd',((t?t.offsetHeight:0)+(n?n.offsetHeight:0))+'px')};hd();addEventListener('resize',hd);addEventListener('load',hd);
 const FC=['#ff4d8d','#ffb02e','#46d17a','#19c3e6','#7c4dff','#ff7a45'],lt=document.getElementById('lt'),nb=innerWidth<576?9:Math.min(26,innerWidth/55|0);
 for(let i=0;i<nb;i++){const b=document.createElement('i');b.style.cssText=`--b:${FC[i%5]};--d:${(i*.37)%1.8}s;--m:${11+9*Math.sin(i*.9)}px`;lt.append(b)}
 if(!matchMedia('(prefers-reduced-motion:reduce)').matches){
